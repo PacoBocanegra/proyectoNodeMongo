@@ -1,0 +1,71 @@
+html
+  include includes/head.pug
+  body
+    include includes/header.pug
+
+    h1.titulo Bienvenidos al blog
+    p En este blog podrás encontrar una gran variedad de post de diversas categorias y autores. Esperemos que puedas disfrutar leyendo todos los post que te ofrecemos y que también aprendas de ellos.
+    p Si quieres escribir tu propio post, aquí te dejamos un formulario para que escribas el tu post.
+    h2.titulo Escribe tu post
+    form(
+      method='POST'
+      action="/addPost"
+    )
+      table
+        tr
+          td
+            label Titulo
+          td
+            input(
+              type="text"
+              name="titulo"
+              required
+            )
+        tr
+          td
+            label Autor
+          td
+            input(
+              type="text"
+              name="autor"
+              required
+            )
+        tr
+          td
+            label Categoría
+          td
+            input(
+              type="text"
+              name="categoria"
+              required
+            )
+        tr
+          td
+            label Fecha publicación
+          td
+            input(
+              type="text"
+              name="fechaPublicacion"
+              required
+            )
+        tr
+          td
+            label Contenido
+          td
+            textarea(
+              name="descripcion"
+              rows="10"
+              cols="50"
+              required
+            )
+        tr
+          td(
+            colspan="2"
+            style="text-align:'center'"
+          )
+            input(
+              class="botonGuardar"
+              type="submit"
+              value="Guardar"
+            )
+    include includes/footer.pug

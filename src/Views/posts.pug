@@ -1,0 +1,19 @@
+html
+  include includes/head.pug
+  body
+    include includes/header.pug
+    
+    h1.titulo Posts
+
+    div.posts
+        each post in posts
+            .post
+                h3.tituloPost= post.titulo
+                p.infoPost
+                    span.autor= post.autor + ' - '
+                    span.fechaPublicacion= post.fechaPublicacion + ' - '
+                    span.categoria= post.categoria
+                p.descripcion= post.descripcion
+
+    
+    include includes/footer.pug

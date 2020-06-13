@@ -1,0 +1,15 @@
+html
+  include includes/head.pug
+  body
+    include includes/header.pug
+    
+    h1.titulo Post Recibido
+    p Se ha introducido los siguientes datos a la BD Mongo
+    p= mensajeInsert
+
+    a(
+        class="titulo"
+        href='/' 
+    ) Volver al Home
+    
+    include includes/footer.pug

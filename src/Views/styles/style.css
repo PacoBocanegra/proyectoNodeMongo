@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+.titulo {
+	text-align: center;
+}
+
+header {
+    height: 100px;
+    color: white;
+    background-color: black;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+	background-color: white;
+	position: relative;
+	top: 11px;
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+ .primerEnlace {
+	border-left: 1px solid black;
+ }
+nav li {
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+	padding: 5px;
+	background-color: white;
+	border-right: 1px solid black;
+	text-align: center;
+	color: black;
+	position: relative;
+	top: 0px;
+	left: -40px;
+}
+
+nav li:hover {
+	background-color: rgba(0,0,0,0.3);
+
+}
+
+nav li>ul {
+	display: none;
+}
+
+nav li:hover>ul {
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+}
+
+nav ul li ul li:hover {
+      background-color: rgba(0,0,0,0.3);
+      color: #EE72E8;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	height: 25px;
+	text-align: center;
+}
+
+table {
+	margin: auto;
+}
